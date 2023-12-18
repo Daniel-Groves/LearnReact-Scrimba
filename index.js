@@ -11,8 +11,13 @@ function Page(){
 function Header(){
     return (
         <header>
-                <nav>
-                <img src="./react-logo.png" alt="React Logo" width="40px"></img>
+                <nav className="nav">
+                <img className="image" src="./react-logo.png" alt="React Logo"></img>
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
                 </nav>
         </header>
     )

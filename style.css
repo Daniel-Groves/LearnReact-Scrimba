@@ -1,0 +1,19 @@
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items > li {
+    font-family: "Gill Sans", sans-serif;
+    padding: 10px;
+}
+
+.image {
+    width: 60px;
+}
