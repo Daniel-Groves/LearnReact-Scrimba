@@ -5,7 +5,7 @@ function Card(props) {
             <div className="info">
                 <img className="info--star" src="./Images/star.png" />
                 <span className="info--ratings">{props.rating}</span>
-                <span className="grey"> {` (${props.reviewCount}) •   `}</span>
+                <span className="grey"> ({props.reviewCount}) • </span>
                 <span className="grey"> {props.country}</span>
             </div>
             <h2>{props.title}</h2>
