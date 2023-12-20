@@ -3,7 +3,7 @@ function App() {
     return (
         <Card 
             key={experience.id}
-            experience={experience}
+            {...experience}
         />
     )
 })
