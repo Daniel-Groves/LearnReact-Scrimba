@@ -59,7 +59,7 @@ section {
 
 .card--photo {
     border-radius: 9px;
-    flex-shrink: 0;
+    margin-bottom: 9px;
     width: 100%;
 }
 
@@ -78,8 +78,6 @@ section {
 
 .info {
     display: flex;
-    flex-direction: row;
-    margin-top: 9px;
     align-items: center;
 }
 
@@ -91,3 +89,18 @@ section {
     font-weight: bold;
 }
 
+.experiences {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card--price {
+    margin-top: auto;
+}
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

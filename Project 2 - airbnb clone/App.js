@@ -1,16 +1,24 @@
 function App() {
+    const experiences = Data.map(experience => {
+    return (
+        <Card 
+            key={experience.id}
+            img={experience.coverImg} 
+            rating={experience.stats.rating} 
+            reviewCount = {experience.stats.reviewCount} 
+            country = {experience.location} 
+            title={experience.title} 
+            price={experience.price}
+        />
+    )
+})
     return (
         <div className = "container">
             <Navbar />
             {/* <Hero /> */}
-            <Card 
-                img="katie-zaferes.png" 
-                rating={5.0} 
-                reviewCount = {6} 
-                country = "USA" 
-                title="Life Lessons with Katie Zaferes" 
-                price={136}
-            />
+            <div className = "experiences">
+                {experiences}
+            </div>
         </div>
     )
 }

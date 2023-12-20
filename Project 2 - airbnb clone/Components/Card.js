@@ -8,8 +8,8 @@ function Card(props) {
                 <span className="grey"> ({props.reviewCount}) • </span>
                 <span className="grey"> {props.country}</span>
             </div>
-            <h2>{props.title}</h2>
-            <p><span className="bold">From ${props.price}</span> / person</p>
+            <h2 className="card--title">{props.title}</h2>
+            <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
