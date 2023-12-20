@@ -7,6 +7,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
 .nav--icon {
     width: 82.02px;
     height: 25.352px;
@@ -44,3 +49,45 @@ section {
     font-size: 16px;
     max-width: 320px;
 }
+
+.card {
+    margin-left: 37px;
+    margin-top: 49px;
+    width: 176px;
+    font-size: 12px
+}
+
+.card--photo {
+    border-radius: 9px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.info--star {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.info--rating {
+    color: #222;
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 110%; /* 13.2px */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    align-items: center;
+}
+
+.grey {
+    color: #918E9B;
+}
+
+.bold {
+    font-weight: bold;
+}
+
