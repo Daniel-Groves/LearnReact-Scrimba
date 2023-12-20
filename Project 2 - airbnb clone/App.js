@@ -3,12 +3,7 @@ function App() {
     return (
         <Card 
             key={experience.id}
-            img={experience.coverImg} 
-            rating={experience.stats.rating} 
-            reviewCount = {experience.stats.reviewCount} 
-            country = {experience.location} 
-            title={experience.title} 
-            price={experience.price}
+            experience={experience}
         />
     )
 })

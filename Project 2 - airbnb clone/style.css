@@ -54,7 +54,8 @@ section {
     margin-left: 37px;
     margin-top: 49px;
     width: 176px;
-    font-size: 12px
+    font-size: 12px;
+    position: relative;
 }
 
 .card--photo {
@@ -103,4 +104,24 @@ section {
 .card--title {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.card--location {
+    color: #918E9B;
+    margin-left: 4px;
+}
+
+.card--reviewCount {
+    color: #918E9B;
+    margin-left: 3px;
 }
