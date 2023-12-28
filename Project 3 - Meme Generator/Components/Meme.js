@@ -9,9 +9,6 @@ function Meme() {
     const [allMemes, setAllMemes] = React.useState([]);
       
     function getMeme() {;
-        console.log(allMemes.length)
-        console.log(Math.floor(Math.random() * allMemes.length))
-        console.log(allMemes[Math.floor(Math.random() * allMemes.length)])
         const url = allMemes[Math.floor(Math.random() * allMemes.length)].url;
         setMeme(meme => ({...meme, randomImage: url}));
     }
@@ -27,12 +24,11 @@ function Meme() {
 
 
     React.useEffect(function() {
-        console.log("Effect ran")
         fetch(`https://api.imgflip.com/get_memes`)
             .then(res => res.json())
             .then(data => setAllMemes(data.data.memes))
-        console.log(allMemes)
     }, [])
+
     return (
         <main>
             <div className="form">
